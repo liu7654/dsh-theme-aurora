@@ -1,0 +1,4 @@
+# 深夜极光主题：在配置树里插入一行自己的插件
+- insert:
+    - id: dsh-theme-aurora
+      name: dsh-theme-aurora

@@ -1,0 +1,53 @@
+{
+  "name": "dsh-theme-aurora",
+  "version": "0.5.0",
+  "type": "module",
+  "description": "Midnight Aurora theme for the DeepSeek Harness Web UI: an animated aurora sky with stars, mountains and a lake behind translucent dark-glass panels.",
+  "license": "MIT",
+  "author": "liu7654",
+  "homepage": "https://github.com/liu7654/dsh-theme-aurora#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liu7654/dsh-theme-aurora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liu7654/dsh-theme-aurora/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-theme",
+    "deepseek-harness",
+    "aurora",
+    "dark",
+    "glass"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "preview.png"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
